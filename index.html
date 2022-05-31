@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>YOU</title>
+<body>
+<header>
+    <a href="#" class="logo"><span>Y</span>OU</a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navbar">
+        <li><a href="#banniere" onclick="toggleMenu();">FOSTERLING</a></li>
+        <li><a href="#apropos" onclick="toggleMenu();">ABOUT US</a></li>
+        <li><a href="#menu" onclick="toggleMenu();">OUR DESCRIPTION</a></li>
+        <!--<li><a href="#expert" onclick="toggleMenu();">PIERROT</a></li>
+        <li><a href="#temoignage" onclick="toggleMenu();">SITRAKA</a></li>--->
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+      
+    </ul>
+</header>
+<section class="banniere" id="banniere">
+    <div class="contenu">
+        <h2>Hello!!!!!!!!!!!! WELCOME IN OUR STUDIO</h2>
+        <h1> We are three in our team.</h1>
+        <h1>This is: Pierrot , Finaritra and Sitraka</h1>
+        <h1>Aboard this page, we share with you our portfolio briefly</h1>
+     
+    </div>
+</section>
+<section class="apropos" id="apropos">
+    <div class="row">
+        <div class="col50">
+            <h2 class="titre-texte"><span>A</span> BOUT US</h2>
+            <p>We are student in "Informatique, Multimédia, Technologies de l'Information , de la Communication et Intelligence Arttificielle Licence 3 (IMTICIA 3)."
+            </p>
+            <p>For this project we formed a group of three people: Pierrot
+                ANDRIAMILANTO, Finaritra RAHARINIRINA, Sitrakiniaina RAVONIARIVELO
+                we wanted to do something original and creative. Various ideas had been put forward</p>
+        </div>
+        <div class="col30">
+            <div class="img">
+                <img src="./images/we1.jpg" alt="image" width="700" height="400"> 
+                
+                "
+            </div>
+        </div>
+    </div>
+</section>
+ <section class="menu" id="menu">
+    <div class="titre">
+        <h2 class="titre-texte"><span>OUR</span>  DESCRIPTION</h2>
+       <p>Someone goes</p>
+       <p>Everyone spaeks briefly her portrait</p>
+    </div>
+   
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/fy1.jpg" width="150" height="200" alt="">
+            </div>
+            <div class="text">
+                <p>Hello, I'm RAHARINIRINA Finaritra Princia</p>
+                <p>My adress is Antsobolo Ambatomaro</p>
+                <p>I'm 22 years old</p>
+                <p>There are six of us in my family</p>
+                <p>I have three brothers and no sister</p>
+                <p>I live with my brother</p>
+                <P>My birthday is on 8 March</P>
+                <p>I am student at "Institut Supérieur Polytechnique de Madagascar" </p>
+                <p> >My phone number:   +261342474234></p>
+               <P>email: <i>raharinirinafinaritra30@gmail.com</i></P>
+                <h3>Finaritra</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/4132.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Hi, let me tallk bit about myself, my name is Pierrot ANDRIAMILANTO .</p>
+                <P>  I live at Ivato</P>
+                <p> I have 21 years old </p>
+                <P> I'm still student at higher polytechnic institute of Madagascar</P>
+                <p> I'm in third year computer science class.</p>
+                <p> >My phone number:+261343700228 </p>
+               <P>email: <i>pierroandriamilanto@gmail.com</i></P>
+                <h3>Pierrot ANDRIAMILANTO</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/s.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Hello, I'm RAVONIARIVELO Sitrakiniaina Valérie</p>
+                <p>My adress is Ambatokaranana Antananarivo</p>
+                <p>I'm 21 years old</p>
+                <p>There are five of us in my family</p>
+                <p>I have two brothers and no sister</p>
+                <p>I live with my brother</p>
+                <P>My birthday is on 25 March</P>
+                <p>I am student at "Institut Supérieur Polytechnique de Madagascar" </p>
+                <p> >My phone number:+261346147639 </p>
+               <P>email: <i>sitrakiniainavale@gmail.com</i></P>
+                <h3>SITRAKA</h3>
+            </div>
+        </div>
+    </div>
+ </section>
+ <section class="contact" id="contact">
+     <div class="titre noir">
+         <h2 class="titre-text"><span>CONTACT</span></h2>
+         <p>You can write here your messages for us ,please!</p>
+     </div>
+     <div class="contactform">
+         <h3>CONTACT</h3>
+         <div class="inputboite">
+             <input type="text" placeholder="Name">
+         </div>
+         <div class="inputboite">
+            <input type="text" placeholder="email">
+         </div>
+         <div class="inputboite">
+            <textarea placeholder="message"></textarea>
+         </div>
+         <div class="inputboite">
+             <input type="submit" value="Send">
+         </div>
+     </div>
+ </section>
+ <script type="text/javascript">
+     window.addEventListener('scroll', function(){
+         const header =document.querySelector('header');
+         header.classList.toggle("sticky", window.scrollY > 0 );
+     });
+
+     function toggleMenu(){
+         const tmenuToggle = document.querySelector('.menuToggle');
+         const navbar = document.querySelector('.navbar');
+         navbar.classList.toggle('active');
+         menuToggle.classList.toggle('active');
+     }
+ </script>
+</body>
+</html>
